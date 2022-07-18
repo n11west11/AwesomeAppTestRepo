@@ -21,7 +21,6 @@ import static java.time.Duration.ofMillis;
 
 public class BasePage {
     public AppiumDriver<?> driver;
-    TestUtils utils = new TestUtils();
 
     public BasePage(){
         this.driver = new DriverManager().getDriver();

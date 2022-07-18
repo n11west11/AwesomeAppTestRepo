@@ -9,12 +9,6 @@ import org.junit.Assert;
 
 public class Steps {
 
-    @Then("^I see the answer (\\d+)$")
-    public void iSeeTheAnswer(int answer) {
-        int currentValue = Integer.parseInt(new WidgetView().getAnswerValue().getText());
-        assert currentValue == answer;
-    }
-
 
     @When("I click the {string} tab")
     public void iClickTheTab(String arg0) {
@@ -44,22 +38,6 @@ public class Steps {
         }
     }
 
-    @And("I navigate to the {string}")
-    public void iNavigateToThe(String page_selection) throws InterruptedException {
-        switch (page_selection) {
-            case "dashboard":
-                new LandingPage().getDashboardPage();
-                break;
-            case "settings":
-                new LandingPage().getSettingsPage();
-                break;
-            case "user menu":
-                new LandingPage().getUserMenu();
-                break;
-            default:
-                throw new PendingException();
-        }
-    }
 
     @And("I click {string}")
     public void iClick(String button_selection) {
@@ -72,12 +50,10 @@ public class Steps {
         }
     }
 
-    @io.cucumber.java.en.Then("I should see {string} as disabled")
-    public void iShouldSeeAsDisabled(String element) {
-        switch (element){
-            case ("Show only winners"):
-                new Settings().getWinnerFilter().isEnabled();
-        }
+    @Then("^I see the answer (\\d+)$")
+    public void iSeeTheAnswer(int answer) {
+        int currentValue = Integer.parseInt(new WidgetView().getAnswerValue().getText());
+        assert currentValue == answer;
     }
 
 }

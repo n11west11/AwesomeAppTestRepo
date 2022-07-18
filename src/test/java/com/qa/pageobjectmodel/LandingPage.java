@@ -24,22 +24,19 @@ public class LandingPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(dashboardTab));
     }
 
-    public Dashboard getDashboardPage() {
+    public void getDashboardPage() {
         click(dashboardTab);
-        return new Dashboard();
     }
 
-    public Settings getSettingsPage() {
+    public void getSettingsPage() {
         click(settingsTab);
-        return new Settings();
     }
 
-    public UserMenu getUserMenu() throws InterruptedException {
+    public void getUserMenu() throws InterruptedException {
         Dimension size = driver.manage().window().getSize();
         int ystart, yend;
         ystart = yend = (int) (size.height * 0.5);
         int xend = (int) (size.width *0.5);
         swipe(0, ystart, xend, yend, 500);
-        return new UserMenu();
     }
 }

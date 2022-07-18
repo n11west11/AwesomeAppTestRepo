@@ -8,8 +8,6 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class Dashboard extends LandingPage{
 
-    TestUtils utils = new TestUtils();
-
     @AndroidFindBy(xpath = "//*[@resource-id='dashboard-title']")
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeOther[`label == \"dashboard-title\"`]")
     private MobileElement title;

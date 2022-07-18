@@ -7,7 +7,6 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import io.cucumber.java.jv.Lan;
 
 public class Settings extends LandingPage {
-    TestUtils utils = new TestUtils();
 
     @AndroidFindBy(accessibility = "settings-title")
     @iOSXCUITFindBy(accessibility = "settings-title")
