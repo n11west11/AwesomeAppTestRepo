@@ -5,6 +5,14 @@ It was the closest implementation seemingly accomplishing the requested assignme
 
 This repurposes the framework to use the awesomeapp!
 
+## Project Structure: 
+Management utils for the driver, logger, etc are placed in the main folder. 
+<img width="401" alt="image" src="https://user-images.githubusercontent.com/82956888/179510654-a30a28d1-dd39-4f9e-9de8-662e49a5319a.png">
+
+Whereas scenarios, steps, and the POM are in the test folder. 
+<img width="478" alt="image" src="https://user-images.githubusercontent.com/82956888/179510628-7bfd461b-5079-4f68-829b-c032545497df.png">
+
+
 ## Technologies you will need to get this working:
 
 - java (built on jre 15)
