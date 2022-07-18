@@ -17,7 +17,7 @@ Whereas scenarios, steps, and the POM are in the test folder. \
 
 - java (built on jre 15)
 - maven (brew install maven)
-    - this will allow you to download dependencies used in teh framework.
+    - this will allow you to download dependencies used in the framework.
 - allure (brew install allure)
 
 Other information on how this was built. 
